@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+
+<body>
+    <div id="to_do">
+
+        <h1>Things 2 do</h1>
+
+        <form action="" class="to_do_form">
+            <input type="text" name="description" placeholder="WRITE ur task here" required>
+            <button type="submit" class="form_button">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </form>
+
+        <div id="tasks">
+
+            <div class="task">
+                <input type="checkbox" name="progress" class="progress">
+                <p class="task-description">
+                    Projeto to do list!
+                </p>
+
+                <div class="task-actions">
+                    <a href="" class="action_button edit_button">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+
+                    <a href="" class="action_button delete_button">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </a>
+                </div>
+
+                <form action="" class="to_do_form edit_task">
+                    <input type="text" name="description" placeholder="EDIT ur task here">
+                    <button type="submit" class="form_button confirm_button">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
