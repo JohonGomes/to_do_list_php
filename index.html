@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,23 @@
 
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100..900&family=Poppins:wght@100..900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMU0a9F8kWzzT1Y7l/1aAbDgiwo1sFjHhNSvMds" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100..900&family=Poppins:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMU0a9F8kWzzT1Y7l/1aAbDgiwo1sFjHhNSvMds" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    
 </head>
 
 <body>
     <div id="to_do">
         <h1>Things 2 do</h1>
-    
-        <form action="" class="to_do_form">
+
+        <form action="" class="to-do-form">
             <input type="text" name="description" placeholder="WRITE ur task here" required>
-            <button type="submit" class="form_button">
+            <button type="submit" class="form-button">
                 <i class="fa-solid fa-plus"></i>
             </button>
         </form>
@@ -33,16 +38,16 @@
                 </p>
 
                 <div class="task-actions">
-                    <a href="" class="action_button edit_button">
-                        <i class="fa-solid fa-pen-to-square"></i>
+                    <a class="action-button edit-button">
+                        <i class="fa-regular fa-pen-to-square"></i>
                     </a>
 
-                    <a href="" class="action_button delete_button">
-                        <i class="fa-solid fa-trash-can"></i>
+                    <a href="" class="action-button delete-button">
+                        <i class="fa-regular fa-trash-can"></i>
                     </a>
                 </div>
 
-                <form action="" class="to_do_form edit_task">
+                <form action="" class="to-do-form edit-task hidden">
                     <input type="text" name="description" placeholder="EDIT ur task here">
                     <button type="submit" class="form_button confirm_button">
                         <i class="fa-solid fa-check"></i>
@@ -52,5 +57,8 @@
         </div>
 
     </div>
+
+    <script src="src/javascript/script.js"></script>
 </body>
+
 </html>

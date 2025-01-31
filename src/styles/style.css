@@ -15,7 +15,7 @@ body{
     background-repeat: no repeat;
 }
 
-#to_do{
+#to-do{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -26,18 +26,18 @@ body{
 
 }
 
-#to_do h1{
+#to-do h1{
     color: #e5f9ff;
     font-size: 28px;
     text-transform: uppercase;
 }
 
-.to_do_form{
+.to-do-form{
     display: flex;
     width: 100%;
 }
 
-.to_do_form input{
+.to-do-form input{
     background-color: transparent;
     border: none;
     color: #e5f9ff;
@@ -48,11 +48,11 @@ body{
 
 }
 
-.to_do_form input:focus-visible{
+.to-do-form input:focus-visible{
     outline: none;
 }
 
-.to_do_form .form_button{
+.to-do-form .form-button{
     border: none;
     min-width: 40px;
     min-height: 40px;
@@ -62,7 +62,7 @@ body{
     transition: scale 0.5s ease;
 }
 
-.to_do_form .form_button:hover{
+.to-do-form .form_button:hover{
     cursor: pointer;
     scale: 1.20;
 }
@@ -83,4 +83,41 @@ body{
     background-color: #191933;
     padding: 8px 12px;
     border-radius: 4px;
+}
+
+.task .progress{
+    margin-right: 10px;
+}
+
+.task .task-description{
+    font-size: 16px;
+    color: #fff;
+    padding: 4px 0px;
+    width: 100%;
+}
+
+.task .task-actions{
+    display: flex;
+    gap: 10px;
+}
+
+.action-button{
+    font-size:16px;
+}
+.action-button.edit-button{
+    color: #6c9bbc;;
+}
+
+.action-button.delete-button{
+    color: #ee9ca7;;
+}
+
+.hidden{
+    display: none !important;
+}
+
+@media screen and(max-width: 600px){
+    #to_do {
+        width: 300px;
+    }
 }
